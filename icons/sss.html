@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+	<style>
+
+		body{
+			font-family: sans-serif;
+		}
+
+		body{
+			background: rgb(119, 119, 254);
+			background: radial-gradient(circle, rgba(119, 119, 254, 1) 0%, rgba(113, 113, 255, 1) 28%, rgba(64, 64, 255, 1) 86%, rgba(26, 26, 255, 1) 100%);
+		}
+
+		.outer-container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400,700& display=swap" rel="stylesheet">
+</html>
+<body>	
+
+	<div class="outer-container">
+		<div class="flex flex-col md:flex-row w-full mx-auto max-w-[1100px] bg-white rounded-lg dhadow">
+			<div class="flex flex-col w-full md:w-1/2 p-8">
+				<h1 class="text-3xl md:text-5xl font-bold mb-6 text-[#545ac1]">Contact us</h1>
+				<form name="contact" method="POST" data-netlify="true" class="flex flex-col space-y-6">
+					<input type="hidden" name="form-name" value="contact"/>
+					<div class="flex items-center space-x-2 bg-[#edf6fd] px-6 py-4 rounded-[40px] shadow">
+						<img src="person.conatct.jpeg" alt="User" width="21px" height="21px" class="text-gray-400"/>
+					<input class="flex-1 h-10 bg-[#edf6fd] text-lg placeholder:text-muted-foreground focus:outline-none" placeholder="Name" type="text" name="name"/>
+					</div>
+					<div class="flex items-center space-x-2 bg-[#edf6fd] px-6 py-4 rounded-[40px] shadow">
+						<img src="envelope-encapsulated-postscript-computer-icons-clip-art-envelope-mail.jpg" alt="Email" width="21px" height="21px" class="text-gray-400"/>
+						<input class="flex-1 h-10 bg-[#edf6fd] text-lg placeholder:text-muted-foreground focus:outline-none" placeholder="Email" type="email" name="email"/>
+					</div>
+					<textarea class="min-h-[80px] w-full bg-[#edf6fd] text-lg placeholder:text-muted-foreground focus:outline-none p-7 rounded-[40px] shadow resize-none" placeholder="Message" name="message"></textarea>
+					<button type="submit" class="text-lg font-medium bg-[#b91c1c] hover:bgt-red-500 text-white py-3 rounded-[40px] transition-colors">Send Message</button>
+				</form>
+			</div>
+		<div class="w-full md:w-1/2">
+			<img src="contact.webp">
+	</div>
+</div>
+</body>
+</html>
